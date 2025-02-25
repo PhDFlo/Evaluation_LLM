@@ -22,7 +22,7 @@ You are a helpful, respectful and honest assistant. Always answer as helpfully a
 
 print("\n\n*** Generate:")
 
-input_ids = tokenizer(prompt, return_tensors='pt').to("cpu")#.input_ids.cuda()
+input_ids = tokenizer(prompt_template, return_tensors='pt').to("cpu")#.input_ids.cuda()
 
 #output = model.generate(inputs=input_ids, temperature=0.7, do_sample=True, top_p=0.95, top_k=40, max_new_tokens=512)
 output = model.generate(**input_ids, max_new_tokens=8)
@@ -43,4 +43,4 @@ pipe = pipeline(
 #    repetition_penalty=1.1
 )
 
-print(pipe(prompt)[0]['generated_text'])
+print(pipe(prompt_template)[0]['generated_text'])
