@@ -14,7 +14,8 @@ models = [
     ("roberta-large", 355), # 355M parameters
     ("gpt2-large", 774), # 774M parameters
     ("gpt2-xl", 1500), # 1.5B parameters
-    ("EleutherAI/gpt-neo-2.7B", 2700) # 2.7B parameters
+    #("deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B", 1500), # 1.5B parameters
+    #("EleutherAI/gpt-neo-2.7B", 2700) # 2.7B parameters
 ]
 
 # Texte d'exemple
